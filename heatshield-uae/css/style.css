@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+}
+
+#results li {
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  color: white;
+}
+
+#results li.green { background: #2e9e4f; }
+#results li.amber { background: #e69500; }
+#results li.red   { background: #d32f2f; }
+
+/* ---------- Mobile friendly ---------- */
+
+body {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+/* Labels sit above their boxes */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+/* Full-width, big boxes that are easy to tap.
+   16px or bigger also stops iPhones from zooming in when you tap a box. */
+input, select {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 12px;
+}
+
+/* Big, clear button */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #1565c0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#results li {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Extra tweaks for small phone screens */
+@media (max-width: 480px) {
+  body {
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
